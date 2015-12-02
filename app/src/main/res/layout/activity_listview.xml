@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
     android:background="@drawable/mon1"
     tools:context="com.example.demolistview.MainActivity" >
+
+    <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
 
     <ListView
         android:id="@+id/listView1"

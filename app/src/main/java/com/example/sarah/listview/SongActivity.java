@@ -3,6 +3,7 @@ package com.example.sarah.listview;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -13,13 +14,15 @@ public class SongActivity extends AppCompatActivity {
 
     TextView lyricView;
     ListItem listItem;
-    TextView songName;
     TextView songNumber;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song);
+        toolbar = (Toolbar)findViewById(R.id.toolbar_actionbar);
+        setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
         listItem = (ListItem)intent.getSerializableExtra("sarah");
@@ -27,8 +30,6 @@ public class SongActivity extends AppCompatActivity {
 
         songNumber =(TextView)findViewById(R.id.numero);
         songNumber.setText("" + listItem.getNumber());
-        songName = (TextView)findViewById(R.id.name1);
-        songName.setText(listItem.getName());
         lyricView = (TextView)findViewById(R.id.song1);
         lyricView.setText(listItem.getLyrics());
            }
