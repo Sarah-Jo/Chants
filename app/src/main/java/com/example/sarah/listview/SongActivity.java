@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SongActivity extends AppCompatActivity {
@@ -28,8 +26,6 @@ public class SongActivity extends AppCompatActivity {
         listItem = (ListItem)intent.getSerializableExtra("sarah");
         getSupportActionBar().setTitle(listItem.getName());
 
-        songNumber =(TextView)findViewById(R.id.numero);
-        songNumber.setText("" + listItem.getNumber());
         lyricView = (TextView)findViewById(R.id.song1);
         lyricView.setText(listItem.getLyrics());
            }
