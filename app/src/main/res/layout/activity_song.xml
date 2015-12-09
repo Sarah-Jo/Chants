@@ -8,10 +8,12 @@
     >
 
 
+
     <ScrollView
 
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_actionbar">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -28,9 +30,7 @@
             android:paddingRight="16dp"
             android:paddingTop="10dp">
 
-            <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar"
-                android:layout_width="match_parent" android:layout_height="wrap_content" />
-            
+
             <TextView
                 android:id="@+id/song1"
                 android:layout_width="fill_parent"

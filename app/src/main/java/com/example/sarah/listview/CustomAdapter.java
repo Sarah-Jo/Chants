@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
             ArrayList<ListItem> myList = new ArrayList<ListItem>();
             Context context;
-    ListItem listItem;
+            ListItem listItem;
 
             // on passe le context afin d'obtenir un LayoutInflater pour utiliser notre
             // row_layout.xml
